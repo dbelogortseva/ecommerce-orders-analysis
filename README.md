@@ -112,7 +112,6 @@ python -m src.inference --history data/processed/cleaned_types.parquet --days 7
 
 `--history` заменяет сохранённый контекст, но не переобучает модель.
 Результат - CSV со столбцами `date` и `prediction`, в единицах заказов в день.
-Прогноз не округляется до целого.
 
 ```python
 from src.inference import forecast
